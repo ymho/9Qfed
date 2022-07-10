@@ -51,7 +51,7 @@ services:
   lg:
     build:
       context: .
-      dockerfile: DP/insurance/Dockerfile
+      dockerfile: DP/lg/Dockerfile
     hostname: lg
     expose:
       - "80"

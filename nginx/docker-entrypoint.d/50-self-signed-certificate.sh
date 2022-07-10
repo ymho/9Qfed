@@ -53,7 +53,7 @@ ST = Tokyo
 L = Chuo-ku
 O = MyCompany
 OU = MyDivision
-CN = hp.example.com
+CN = lg.example.edu
 [v3_req]
 keyUsage = keyEncipherment, dataEncipherment
 extendedKeyUsage = serverAuth
@@ -73,7 +73,7 @@ ST = Tokyo
 L = Chuo-ku
 O = MyCompany
 OU = MyDivision
-CN = hp.example.com
+CN = is.example.edu
 [v3_req]
 keyUsage = keyEncipherment, dataEncipherment
 extendedKeyUsage = serverAuth
@@ -93,7 +93,7 @@ ST = Tokyo
 L = Chuo-ku
 O = MyCompany
 OU = MyDivision
-CN = hp.example.com
+CN = fed.example.org
 [v3_req]
 keyUsage = keyEncipherment, dataEncipherment
 extendedKeyUsage = serverAuth

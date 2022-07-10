@@ -1,2 +1,2 @@
 <?php
-echo ("Hello");
+echo "This is IdP-2";
