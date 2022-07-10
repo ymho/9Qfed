@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+
+mysql/data
+nginx/certs/
+nginx/log/
+*.pem
+*.key
+*.crt
+*.tar.gz
