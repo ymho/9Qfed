@@ -92,6 +92,6 @@
 //];
 
 $metadata['https://fed.example.org'] = [
-    'AssertionConsumerService' => 'https://fed.example.org/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp',
-    'SingleLogoutService' => 'https://fed.example.org/simplesaml/module.php/saml/sp/saml2-logout.php/default-sp',
+    'AssertionConsumerService' => 'https://fed.example.org/simplesaml2/module.php/saml/sp/saml2-acs.php/default-sp',
+    'SingleLogoutService' => 'https://fed.example.org/simplesaml2/module.php/saml/sp/saml2-logout.php/default-sp',
 ];
