@@ -1,5 +1,5 @@
 <?php
-require_once('/var/simplesamlphp/lib/_autoload.php');
+require_once('/var/simplesamlphp1/lib/_autoload.php');
 //use ;
 $as = new \SimpleSAML\Auth\Simple('default-sp');
 $as->requireAuth();
@@ -12,6 +12,8 @@ $session->cleanup();
 <html>
 <body>
 <h1>こんにちは <?php echo ($attributes["uid"][0]); ?></h1>
-<a href="https://samlsp.example.com/simplesaml/module.php/core/authenticate.php?as=default-sp&logout">logout</a>
+<a href="https://fed.example.org/simplesaml/module.php/core/authenticate.php?as=default-sp&logout">logout</a>
 <body>
+
+
 </html>

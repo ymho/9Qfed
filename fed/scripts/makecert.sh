@@ -1,6 +1,6 @@
 #!/bin/sh
 
-openssl req -newkey rsa:3072 -new -x509 -days 3652 -nodes -out /var/simplesamlphp/cert/hospital.crt -keyout /var/simplesamlphp/cert/hospital.pem -config - << __EOF__
+openssl req -newkey rsa:3072 -new -x509 -days 3652 -nodes -out /var/simplesamlphp1/cert/saml.pem -keyout /var/simplesamlphp1/cert/saml.key -config - << __EOF__
 [req]
 distinguished_name = req_distinguished_name
 x509_extensions = v3_req
@@ -11,7 +11,7 @@ ST = Tokyo
 L = Chuo-ku
 O = MyCompany
 OU = MyDivision
-CN = hp.example.com
+CN = fed.example.com
 [v3_req]
 keyUsage = keyEncipherment, dataEncipherment
 extendedKeyUsage = serverAuth

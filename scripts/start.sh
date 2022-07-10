@@ -27,4 +27,24 @@ extendedKeyUsage = serverAuth
 __EOF__
 openssl x509 -in ./tmp/hospital.pem -noout -text
 
+# IdP-2の証明書を生成する
+# SP(fed)に共有するため.tmp/以下に配置する
+openssl req -newkey rsa:3072 -new -x509 -days 3652 -nodes -out ./tmp/card.pem -keyout ./tmp/card.key -config - << __EOF__
+[req]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = JP
+ST = Tokyo
+L = Chuo-ku
+O = MyCompany
+OU = MyDivision
+CN = card.example.net
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+__EOF__
+openssl x509 -in ./tmp/card.pem -noout -text
+
 docker-compose up -d --build
